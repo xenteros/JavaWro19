@@ -14,6 +14,17 @@ class Primitives {
 //      operatory   + - * /
 
         System.out.println(i + number);
+        int maxInt = 2147483647;
+        System.out.println(maxInt + 1);
+        System.out.println(1/2);
+        System.out.println(10/3);
+
+        double one = 1;
+        System.out.println(one/2);
+        System.out.println(1.0/2);
+        System.out.println(1.0*10/3);
+
+//        System.out.println(1/0);
 
     }
 
