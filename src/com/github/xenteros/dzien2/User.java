@@ -27,4 +27,10 @@ class User {
     String getFullName() {
         return firstName + " " + lastName;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        User that = (User) o;
+        return this.firstName.equals(that.firstName) && this.lastName.equals(that.lastName);
+    }
 }

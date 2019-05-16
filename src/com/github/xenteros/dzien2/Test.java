@@ -5,7 +5,12 @@ import java.util.Scanner;
 class Test {
 
     public static void main(String[] args) {
-//        User user = new User("Jan", "Nowak");
+        User user = new User("Jan", "Nowak");
+        User user2 = new User("Jan", "Nowak");
+
+        System.out.println(user == user2);
+        System.out.println(user.equals(user2));
+
 //        System.out.println(user.getFullName());
 
 //        if (warunek) {
@@ -14,13 +19,13 @@ class Test {
 //            instrukcje w przeciwnym przypadku
 //        }
 
-        Scanner scanner = new Scanner(System.in);
-        String name = scanner.nextLine();
-        if (name.endsWith("a")) {
-            System.out.println("Hello, m'dame");
-        } else {
-            System.out.println("Hello, sir");
-        }
+//        Scanner scanner = new Scanner(System.in);
+//        String name = scanner.nextLine();
+//        if (name.endsWith("a")) {
+//            System.out.println("Hello, m'dame");
+//        } else {
+//            System.out.println("Hello, sir");
+//        }
 
 
     }
