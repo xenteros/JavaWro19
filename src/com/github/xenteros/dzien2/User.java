@@ -12,7 +12,6 @@ class User {
         Konstruktory są taką strategią, jak stworzyć obiekt. Programista tworząc obiekt,
         decyduje, z którego konstruktora skorzysta.
      */
-
     User() {
 
     }
