@@ -20,6 +20,7 @@ public class Dog extends Animal {
 
     @Override
     public String toString() {
-        return "Dog with " + getLegCount() + " legs and name: " + this.name;
+//        return "Dog with " + getLegCount() + " legs and name: " + this.name;
+        return String.format("Dog with %d legs and name: %s", getLegCount(), this.name);
     }
 }
