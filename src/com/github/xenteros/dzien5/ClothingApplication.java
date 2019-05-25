@@ -1,4 +1,9 @@
-package com.github.xenteros.dzien4;
+package com.github.xenteros.dzien5;
+
+import com.github.xenteros.dzien5.Sock;
+import com.github.xenteros.dzien5.Tshirt;
+import com.github.xenteros.dzien5.Clothing;
+
 
 class ClothingApplication {
 
@@ -25,30 +30,22 @@ class ClothingApplication {
                 "XL",
                 "166"
         );
-//        tshirt.display();
+        Clothing[] clothes = new Clothing[]{null, sock, tshirt};
+        printClothes(clothes);
 
-        Clothing c1 = null;
-        Clothing c2 = sock;
-        c1 = c2;
-        Clothing c3 = tshirt;
+    }
 
-        Clothing[] clothes = new Clothing[] {c1, c2, c3};
 
+
+
+
+    public static void printClothes(Clothing[] clothes) {
         for (Clothing cloth : clothes) {
-            System.out.println(cloth.getClass());
-            cloth.display();
-            System.out.println();
+            if (cloth != null) {
+                System.out.println(cloth.getClass());
+                cloth.display();
+                System.out.println();
+            }
         }
-
-//        if (c2 instanceof Sock) {
-//            Sock s = (Sock)c2;
-//            System.out.println(s.getLength());
-//        }
-
-
-
-
-
-
     }
 }

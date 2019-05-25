@@ -1,4 +1,4 @@
-package com.github.xenteros.dzien4;
+package com.github.xenteros.dzien5;
 
 abstract class Clothing {
 
