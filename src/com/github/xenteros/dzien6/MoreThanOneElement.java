@@ -22,6 +22,8 @@ class MoreThanOneElement {
         System.out.println(list);
         System.out.println(list.toArray());
 
+        System.out.println(list.get(3));
+
         String[][] arrays = new String[3][];
         arrays[0] = new String[]{"a", "b", "c"};
         arrays[1] = new String[]{"D", "E", "F", "G"};
