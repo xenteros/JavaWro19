@@ -4,6 +4,8 @@ class Interfejsy {
 
     public static void main(String[] args) {
 
+        System.out.println(HelloWorld.message);
+
         HelloWorld lower = new LowerCaseHelloWorld();
         HelloWorld upper = new UpperCaseHelloWorld();
         HelloWorld exclamation = new HelloWorld() {
