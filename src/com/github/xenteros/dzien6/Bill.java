@@ -3,7 +3,7 @@ package com.github.xenteros.dzien6;
 import java.util.ArrayList;
 import java.util.List;
 
-class Bill {
+abstract class Bill {
 
     private List<Product> products;
 
@@ -15,11 +15,16 @@ class Bill {
         products.add(product);
     }
 
-    public int getTotal() {
+    public double getTotal() {
+        double total = 0;
 
+        for (Product product : products) {
+            total = total + product.getPrice();
+        }
 
-        return 0;
+        return total*(1 - getDiscount());
     }
 
+    public abstract double getDiscount();
 
 }
