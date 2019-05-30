@@ -40,4 +40,19 @@ class Loops {
     }
 
 
+    /**
+     * Napisz metodę, która zwróci Listę tablic. W tablicy w i-tym wierszu, ma się znaleźć i liczb i:
+     *
+     * 1
+     * 22
+     * 333
+     * 4444
+     * @param n
+     * @return
+     */
+    public List<int[]> triangle(int n) {
+        return null;
+    }
+
+
 }
