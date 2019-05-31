@@ -3,7 +3,6 @@ package com.github.xenteros.loops;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -79,9 +78,9 @@ class LoopsTest {
     void whenCallingSameLettersWithEqualLengthArguments_ThenReturningCorrectValue() {
         Loops loops = new Loops();
 
-        String[] as = new String[] {"Abcd", "aaaa", "abAb"};
-        String[] bs = new String[] {"AacA", "bbbb", "ABab"};
-        int[] results = new int[] {2, 0, 1};
+        String[] as = new String[]{"Abcd", "aaaa", "abAb"};
+        String[] bs = new String[]{"AacA", "bbbb", "ABab"};
+        int[] results = new int[]{2, 0, 1};
 
         for (int i = 0; i < 3; i++) {
             assertEquals(results[i], loops.sameLetters(as[i], bs[i]));
@@ -93,7 +92,7 @@ class LoopsTest {
     @DisplayName("Dla ujemnej liczby rzędów zwraca 0 rzędów")
     void whenCallingTriangleWithNegative_Then0RowsAreReturned() {
         Loops loops = new Loops();
-        for (int i = -100; i < 0 ; i++) {
+        for (int i = -100; i < 0; i++) {
             assertEquals(0, loops.triangle(i).size());
         }
     }
