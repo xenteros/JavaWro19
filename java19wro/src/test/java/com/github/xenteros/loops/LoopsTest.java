@@ -104,13 +104,13 @@ class LoopsTest {
 
         List<int[]> triangle = loops.triangle(10);
 
+        assertEquals(10, triangle.size());
+
         for (int i = 0; i < triangle.size(); i++) {
             int[] ints = triangle.get(i);
             for (int j : ints) {
-                assertEquals(i, ints[j]);
+                assertEquals(i, j);
             }
         }
-
     }
-
 }
