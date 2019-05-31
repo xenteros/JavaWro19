@@ -25,9 +25,9 @@ class OddsTest {
     void shouldReturnCorrectValueForArrays() {
         Odds odds = new Odds();
 
-        assertEquals(2, odds.nthOdd(new int[]{1,2,3,4}, 1));
-        assertEquals(4, odds.nthOdd(new int[]{1,2,3,4}, 2));
-        assertEquals(4, odds.nthOdd(new int[]{11,1,2,3,4}, 1));
+        assertEquals(1, odds.nthOdd(new int[]{1,2,3,4}, 1));
+        assertEquals(3, odds.nthOdd(new int[]{1,2,3,4}, 2));
+        assertEquals(11, odds.nthOdd(new int[]{11,1,2,3,4}, 1));
         assertEquals(-1, odds.nthOdd(new int[]{10,1,2,3,4}, 10));
     }
 
