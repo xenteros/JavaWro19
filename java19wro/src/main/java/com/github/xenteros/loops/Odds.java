@@ -13,6 +13,19 @@ class Odds {
      * @param n
      */
     public int nthOdd(int[] ints, int n) {
+
+        int alreadyFound = 0;
+
+        for (int i = 0; i < ints.length; i++) {
+            if (ints[i] % 2 == 1) {
+                alreadyFound++;
+            }
+            if (alreadyFound == n) {
+                return ints[i];
+            }
+        }
+
+
         return -1;
     }
 }
