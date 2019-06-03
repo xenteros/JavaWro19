@@ -16,10 +16,11 @@ class AnimalFactoryTest {
         Animal elephant = animalFactory.create("Elephant");
         Animal lion = animalFactory.create("Lion");
         Animal monkey = animalFactory.create("Monkey");
+        Class<?>[] classes = elephant.getClass().getClasses();
 
-        assertTrue(Arrays.asList(elephant.getClass().getClasses()).contains(Elephant.class));
-        assertTrue(Arrays.asList(lion.getClass().getClasses()).contains(Lion.class));
-        assertTrue(Arrays.asList(monkey.getClass().getClasses()).contains(Monkey.class));
+        assertTrue(elephant instanceof Elephant);
+        assertTrue(lion instanceof Lion);
+        assertTrue(monkey instanceof Monkey);
     }
 
 }
