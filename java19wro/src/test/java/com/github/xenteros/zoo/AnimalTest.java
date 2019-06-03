@@ -13,19 +13,20 @@ class AnimalTest {
     @Test
     public void lionShouldBeAnAnimal() {
         Lion lion = new Lion();
-        assertTrue(Arrays.asList(lion.getClass().getClasses()).contains(Animal.class));
+        assertTrue(lion.getClass().getSuperclass().equals(Animal.class));
     }
 
     @Test
     public void monkeyShouldBeAnAnimal() {
         Monkey monkey = new Monkey();
-        assertTrue(Arrays.asList(monkey.getClass().getClasses()).contains(Monkey.class));
+        assertTrue(monkey.getClass().getSuperclass().equals(Animal.class));
     }
 
     @Test
     public void elephantShouldBeAnAnimal() {
         Elephant elephant = new Elephant();
-        assertTrue(Arrays.asList(elephant.getClass().getClasses()).contains(Animal.class));
+        Class<?>[] classes = elephant.getClass().getClasses();
+        assertTrue(elephant.getClass().getSuperclass().equals(Animal.class));
     }
 
 }
