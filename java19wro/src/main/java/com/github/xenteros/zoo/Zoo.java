@@ -5,7 +5,7 @@ import java.util.List;
 
 class Zoo {
 
-    List<Animal> animals = new ArrayList<>();
+    private List<Animal> animals = new ArrayList<>();
 
     public Zoo() {
     }
@@ -28,6 +28,10 @@ class Zoo {
 
     public void makeAllScream(Class clazz) {
         throw new UnsupportedOperationException();
+    }
+
+    public int getAnimalsSize() {
+        return animals.size();
     }
 
 }
