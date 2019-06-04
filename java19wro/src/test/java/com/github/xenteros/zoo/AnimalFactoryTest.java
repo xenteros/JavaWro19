@@ -22,5 +22,4 @@ class AnimalFactoryTest {
         assertTrue(lion instanceof Lion);
         assertTrue(monkey instanceof Monkey);
     }
-
 }

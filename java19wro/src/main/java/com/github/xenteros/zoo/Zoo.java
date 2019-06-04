@@ -6,28 +6,39 @@ import java.util.List;
 class Zoo {
 
     private List<Animal> animals = new ArrayList<>();
+    private AnimalFactory animalFactory = new AnimalFactory();
 
     public Zoo() {
     }
 
     public void buyAnimal(String name) {
-        throw new UnsupportedOperationException();
+        this.animals.add(animalFactory.create(name));
     }
 
     public void animalDied(Animal animal) {
-        throw new UnsupportedOperationException();
+        this.animals.remove(animal);
     }
 
     public void animalBorn(Animal animal) {
-        throw new UnsupportedOperationException();
+        this.animals.add(animal);
     }
 
     public void letAllAnimalsScream() {
-        throw new UnsupportedOperationException();
+        for (Animal animal : this.animals) {
+            System.out.println(animal.makeSomeNoise());
+        }
     }
 
     public void makeAllScream(Class clazz) {
-        throw new UnsupportedOperationException();
+        for (Animal animal : this.animals) {
+            if (animal.getClass().equals(clazz)) {
+                System.out.println(animal.makeSomeNoise());
+            }
+        }
+        this.animals.stream()
+                .filter(a -> a.getClass().equals(clazz))
+                .forEach(a -> System.out.println(a.makeSomeNoise()));
+
     }
 
     public int getAnimalsSize() {
