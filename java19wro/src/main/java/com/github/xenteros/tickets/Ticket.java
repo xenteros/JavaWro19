@@ -1,6 +1,5 @@
 package com.github.xenteros.tickets;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 class Ticket {
@@ -24,6 +23,10 @@ class Ticket {
     public void setWindow(String window) {
         this.window = window;
         this.calledAt = LocalDateTime.now();
+    }
+
+    public boolean wasCalled() {
+        return window != null;
     }
 
     @Override

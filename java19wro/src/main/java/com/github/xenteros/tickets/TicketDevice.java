@@ -13,5 +13,14 @@ class TicketDevice {
         return ticket;
     }
 
+    public void getTicketForADesk(String desk) {
+        for (int i = 0; i < tickets.size(); i++) {
+            if (!tickets.get(i).wasCalled()) {
+                tickets.get(i).setWindow(desk);
+                return;
+            }
+        }
+    }
+
 
 }
