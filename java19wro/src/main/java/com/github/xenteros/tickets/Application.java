@@ -11,9 +11,16 @@ class Application {
         Desk desk2 = new Desk(ticketDevice, "desk2");
         Timer timer = new Timer();
         timer.schedule(desk1, 0, 5000);
-        timer.schedule(desk2, 0, 5000);
+        timer.schedule(desk2, 0, 7500);
 
         Ticket ticket = ticketDevice.createTicket();
+        ticket = ticketDevice.createTicket();
+        ticket = ticketDevice.createTicket();
+        ticket = ticketDevice.createTicket();
+        ticket = ticketDevice.createTicket();
+        ticket = ticketDevice.createTicket();
+        ticket = ticketDevice.createTicket();
+        ticket = ticketDevice.createTicket();
 
 
 

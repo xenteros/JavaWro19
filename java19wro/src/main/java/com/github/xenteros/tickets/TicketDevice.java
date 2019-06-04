@@ -17,6 +17,7 @@ class TicketDevice {
         for (int i = 0; i < tickets.size(); i++) {
             if (!tickets.get(i).wasCalled()) {
                 tickets.get(i).setWindow(desk);
+                System.out.println(String.format("Numerek %d proszony do okienka %s", tickets.get(i).getNumber(), desk));
                 return;
             }
         }

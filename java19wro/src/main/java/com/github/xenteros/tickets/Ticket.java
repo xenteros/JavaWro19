@@ -29,6 +29,12 @@ class Ticket {
         return window != null;
     }
 
+    public int getNumber() {
+        return number;
+    }
+
+
+
     @Override
     public String toString() {
         return String.format("Ticket number %d, created at: %s", number, createdAt.toString());
